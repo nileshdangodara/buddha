@@ -1,0 +1,133 @@
+/* Contact Section Styles */
+.contact-section {
+    background-color: var(--white);
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-icon {
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: 50%;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    transition: var(--transition);
+  }
+  
+  .contact-item:hover .contact-icon {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-details h4 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-details p {
+    color: var(--text-light);
+    margin-bottom: 0;
+  }
+  
+  .social-connect h4 {
+    color: var(--primary);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form-container {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+  }
+  
+  .contact-form-container:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form-container h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .form-group label {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    transition: var(--transition);
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.2rem rgba(31, 56, 88, 0.1);
+  }
+  
+  .form-check-label {
+    color: var(--text-light);
+  }
+  
+  .form-check-input:checked {
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+  
+  /* Map Section */
+  .map-section {
+    height: 450px;
+  }
+  
+  /* Media Queries for Contact Page */
+  @media (max-width: 767.98px) {
+    .contact-form-container {
+      margin-top: 2rem;
+      padding: 1.5rem;
+    }
+    
+    .contact-item {
+      margin-bottom: 1.5rem;
+    }
+    
+    .map-section {
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .contact-icon {
+      min-width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+    
+    .contact-details h4 {
+      font-size: 1.1rem;
+    }
+    
+    .contact-form-container h3 {
+      font-size: 1.5rem;
+    }
+    
+    .map-section {
+      height: 250px;
+    }
+  }

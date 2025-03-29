@@ -1,0 +1,188 @@
+/* Programs Page Specific Styles */
+
+/* Hero Section */
+.programs-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/buddhist-temple.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .programs-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .programs-hero .lead {
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Programs Overview */
+  .programs-overview {
+    background-color: #fff;
+  }
+  
+  .program-cards {
+    margin-top: 20px;
+  }
+  
+  .program-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .program-icon {
+    font-size: 2.5rem;
+    color: #f4b400;
+    margin-bottom: 20px;
+  }
+  
+  .program-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .program-card p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .program-card .btn-link {
+    color: #f4b400;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .program-card .btn-link:hover {
+    color: #e6a500;
+    text-decoration: underline;
+  }
+  
+  /* Program Sections */
+  .program-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .divider {
+    height: 3px;
+    width: 60px;
+    background-color: #f4b400;
+    margin: 0 auto;
+  }
+  
+  .program-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    height: 100%;
+  }
+  
+  .program-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .program-content p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .program-content ul {
+    padding-left: 20px;
+    color: #666;
+  }
+  
+  .program-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  /* Get Involved Section */
+  .get-involved {
+    background-color: #f8f9fa;
+  }
+  
+  .involvement-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .involvement-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .involvement-icon {
+    font-size: 2.5rem;
+    color: #f4b400;
+    margin-bottom: 20px;
+  }
+  
+  .involvement-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .involvement-card p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .involvement-card .btn-primary {
+    background-color: #f4b400;
+    border-color: #f4b400;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+  }
+  
+  .involvement-card .btn-primary:hover {
+    background-color: #e6a500;
+    border-color: #e6a500;
+  }
+  
+  /* Responsive

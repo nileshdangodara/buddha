@@ -1,0 +1,21 @@
+{
+  "name": "buddhavihar.in",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2",
+    "ngrok": "^5.0.0-beta.2",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.7"
+  }
+}
