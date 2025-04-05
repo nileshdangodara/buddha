@@ -70,7 +70,7 @@ app.post('/send-email', (req, res) => {
       return res.status(200).json({ success: true, message: 'Email sent successfully' });
     });
   });
- const PORT =  process.env.PORT 
+ const PORT =  process.env.PORT || 3000
 app.listen(PORT, function(){
     console.log(`server started at ${PORT}`);
 });
