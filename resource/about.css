@@ -203,7 +203,7 @@
   .value-icon {
     width: 60px;
     height: 60px;
-    background-color: var(--primary-light);
+    background-color: var(--accent);
     color: var(--primary);
     border-radius: 50%;
     display: flex;
