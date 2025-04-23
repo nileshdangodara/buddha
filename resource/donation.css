@@ -1,0 +1,190 @@
+    /* Donation Form Styles */
+    .donation-header {
+        background-color: var(--primary);
+        color: var(--white);
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px 8px 0 0;
+        border: 2px solid var(--primary-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+      .logo1{
+        align-self: flex-start;
+        width: 10rem;
+        height: 10rem;
+        img {
+          width: 100%;
+          height: auto;
+          
+        }
+      }
+  
+     
+      .trust-info {
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--white);
+      }
+  
+      .donation-quote {
+        background-color: var(--accent);
+        color: var(--white);
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      .donation-form {
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+  
+      .form-group {
+        margin-bottom: 20px;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: var(--primary);
+      }
+  
+      input, select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: var(--transition);
+      }
+  
+      input:focus, select:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 2px rgba(255, 126, 95, 0.2);
+      }
+  
+      .submit-btn {
+        background-color: var(--accent);
+        color: var(--white);
+        border: none;
+        padding: 14px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: var(--transition);
+        width: 100%;
+        margin-top: 10px;
+      }
+  
+      .submit-btn:hover {
+        background-color: var(--accent-dark);
+        transform: translateY(-2px);
+      }
+  
+      .ambedkar-quote {
+        background-color: var(--primary-light);
+        color: var(--white);
+        padding: 15px;
+        border-radius: 4px;
+        font-style: italic;
+        margin: 20px 0;
+      }
+  
+      .quote-author {
+        font-weight: bold;
+        text-align: right;
+        margin-top: 10px;
+      }
+  
+      .form-row {
+        display: flex;
+        gap: 20px;
+      }
+  
+      .form-col {
+        flex: 1;
+      }
+  
+      .info-text {
+        font-size: 14px;
+        color: var(--text-light);
+        margin-top: 5px;
+      }
+  
+      .required::after {
+        content: " *";
+        color: red;
+      }
+  
+      .sanskrit {
+        text-align: center;
+        margin-top: 20px;
+        font-style: italic;
+        color: var(--primary);
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+  
+      .form-group {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+  
+      .form-group:nth-child(1) { animation-delay: 0.1s; }
+      .form-group:nth-child(2) { animation-delay: 0.2s; }
+      .form-group:nth-child(3) { animation-delay: 0.3s; }
+      .form-group:nth-child(4) { animation-delay: 0.4s; }
+      .form-group:nth-child(5) { animation-delay: 0.5s; }
+      .form-group:nth-child(6) { animation-delay: 0.6s; }
+      
+      .success-message {
+        background-color: #d4edda;
+        color: #155724;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        border-left: 4px solid #28a745;
+        display: none;
+      }
+      
+      .error-message {
+        background-color: #f8d7da;
+        color: #721c24;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        border-left: 4px solid #dc3545;
+        display: none;
+      }
+  
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .form-row {
+          flex-direction: column;
+          gap: 0;
+        }
+        
+        .donation-header {
+          flex-direction: column;
+        }
+        .logo1{
+            align-self: center;
+            justify-self: center;
+            width: 7rem;
+            height: 7rem
+        }
+
+      }
