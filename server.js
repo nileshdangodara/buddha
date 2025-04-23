@@ -254,7 +254,32 @@ app.post('/send-email', (req, res) => {
     return transporter.sendMail(mailOptions);
   }
 
-
+app.post('/razorpay-webhook', express.raw({type: 'application/json'}), async (req, res) => {
+  const webhookSecret = process.env.RAZORPAY_WEBHOOK_SECRET;
+  
+  // Verify webhook signature
+  const signature = req.headers['x-razorpay-signature'];
+  const isValid = razorpay.webhooks.verify(
+    req.body.toString(),
+    signature,
+    webhookSecret
+  );
+  
+  if (!isValid) {
+    return res.status(400).json({success: false});
+  }
+  
+  const event = JSON.parse(req.body);
+  
+  // Handle different webhook events
+  if (event.event === 'payment.authorized') {
+    // Handle payment authorization
+    const paymentId = event.payload.payment.entity.id;
+    // Update your database, send confirmation emails, etc.
+  }
+  
+  res.status(200).send({received: true});
+});
 
  const PORT =  process.env.PORT || 3000
 app.listen(PORT, function(){
