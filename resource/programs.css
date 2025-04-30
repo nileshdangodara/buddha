@@ -49,7 +49,7 @@
   
   .program-icon {
     font-size: 2.5rem;
-    color: #f4b400;
+    color: #ff7e5f;
     margin-bottom: 20px;
   }
   
@@ -66,13 +66,13 @@
   }
   
   .program-card .btn-link {
-    color: #f4b400;
+    color: #ff7e5f;
     padding: 0;
     text-decoration: none;
   }
   
   .program-card .btn-link:hover {
-    color: #e6a500;
+    color: #e25d41;
     text-decoration: underline;
   }
   
@@ -97,7 +97,7 @@
   .divider {
     height: 3px;
     width: 60px;
-    background-color: #f4b400;
+    background-color: #ff7e5f;
     margin: 0 auto;
   }
   
@@ -155,7 +155,7 @@
   
   .involvement-icon {
     font-size: 2.5rem;
-    color: #f4b400;
+    color: #ff7e5f;
     margin-bottom: 20px;
   }
   
@@ -172,8 +172,8 @@
   }
   
   .involvement-card .btn-primary {
-    background-color: #f4b400;
-    border-color: #f4b400;
+    background-color: #ff7e5f;
+    border-color: #ff7e5f;
     color: #fff;
     padding: 10px 20px;
     border-radius: 50px;
@@ -181,8 +181,8 @@
   }
   
   .involvement-card .btn-primary:hover {
-    background-color: #e6a500;
-    border-color: #e6a500;
+    background-color: #e25d41;
+    border-color: #e25d41;
   }
   
   /* Responsive
