@@ -464,7 +464,12 @@ nav {
   background-color: transparent;
   color: var(--white);
 }
-
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
 /* Footer Section */
 .footer_img_holder {
   height: 50vh;
