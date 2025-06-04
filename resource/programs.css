@@ -73,7 +73,9 @@
   
   .program-card .btn-link:hover {
     color: #e25d41;
-    text-decoration: underline;
+    transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid var(--accent);
   }
   
   /* Program Sections */
