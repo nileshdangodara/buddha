@@ -52,6 +52,7 @@ app.get("/programs",function(req,res){
 
 
 
+
 app.post('/send-email', (req, res) => {
     const { name, email, phone, subject, message, newsletter } = req.body;
     
@@ -61,15 +62,23 @@ app.post('/send-email', (req, res) => {
       to:req.body.email, // Recipient email
       subject: `Contact Form: ${subject}`,
       html: `
-        <h3>Thank you for contacting with us</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-        <p><strong>Newsletter Subscription:</strong> ${newsletter ? 'Yes' : 'No'}</p>
-      `
+    <div style="font-family: Arial, sans-serif; padding: 20px;">
+      <h2 style="color: #4CAF50;">Thank you for reaching out, ${name}!</h2>
+      <p>We’ve received your message and will get back to you as soon as possible.</p>
+
+      <h4>Your Submitted Details:</h4>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+      <p><strong>Subject:</strong> ${subject}</p>
+      <p><strong>Message:</strong><br>${message}</p>
+      <p><strong>Newsletter Subscription:</strong> ${newsletter ? 'Yes 👍' : 'No'}</p>
+
+      <br>
+      <p>We'll be in touch shortly. Thank you for connecting with us!</p>
+      <p style="margin-top: 30px;">Warm regards,<br><strong>The Phiniex Trust Team</strong></p>
+    </div>
+  `
     };
     
 
@@ -79,12 +88,16 @@ app.post('/send-email', (req, res) => {
     subject: `New Contact Form Submission: ${subject}`,
     html: `
       <h3>New Contact Form Submission</h3>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-      <p><strong>Subject:</strong> ${subject}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message}</p>
+
+      <ul>
+        <li><strong>Name:</strong> ${name}</li>
+        <li><strong>Email:</strong> ${email}</li>
+        <li><strong>Phone:</strong> ${phone || 'Not provided'}</li>
+        <li><strong>Subject:</strong> ${subject}</li>
+        <li><strong>Message:</strong></li>
+        <li>${message}</li>
+        
+      </ul>
       <p><strong>Newsletter Subscription:</strong> ${newsletter ? 'Yes' : 'No'}</p>
     `
   };
