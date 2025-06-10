@@ -5,7 +5,7 @@ const bodyparser = require('body-parser');
 const nodemailer= require('nodemailer');
 const mongoose = require('mongoose');
 const crypto = require('crypto');
-const Razorpay = require('razorpay');
+
 const ejs =require("ejs");
 const app = express();
 app.set('view engine',"ejs");
@@ -19,10 +19,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'resource'))); 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID,
-  key_secret: process.env.RAZORPAY_KEY_SECRET,
-});
 
 
 const transporter = nodemailer.createTransport({
@@ -39,9 +35,7 @@ app.get("/about",function(req,res){
     res.render("aboutus")
 });
 app.get("/donation", function(req, res) {
-  res.render("donation", {
-    RAZORPAY_KEY_ID: process.env.RAZORPAY_KEY_ID
-  });
+  res.render("donation");
 });
 app.get("/contact",function(req,res){
     res.render("contact")
