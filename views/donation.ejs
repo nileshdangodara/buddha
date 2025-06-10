@@ -83,7 +83,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link donate-link" href="donation">Donate</a>
+              <a class="nav-link donate-link" href="donate">Donate</a>
             </li>
           </ul>
         </div>
@@ -109,11 +109,7 @@
           </div>
           <div class="col-lg-6">
             <div class="hero_img text-center">
-              <img
-                src="images/contact-hero.png"
-                alt="Contact Us"
-                class="img-fluid"
-              />
+             <img src="images/donation.png" alt="animated Team image" class="img-fluid h-75 w-75" />
             </div>
           </div>
         </div>
@@ -125,34 +121,33 @@
       <div class="container">
         <div class="section-header text-center">
           <span class="section-subtitle">Your Support Matters</span>
-          <h2 class="section-title">Two Simple Ways to Donate</h2>
+          <h2 class="section-title">Simple Way to Donate</h2>
           <div class="section-divider"></div>
           <p class="section-description">
-            Choose the donation method that best suits your needs. Whether you
-            prefer a quick, small contribution or wish to make a larger donation
-            with tax benefits, your support helps us continue our work in the
-            community.
-          </p>
+All donations can be made by scanning the QR code below. You can contribute any amount you wish. If you would like to claim tax exemption under Section 80G, please complete the form after making your payment. We will use the information provided to issue an official receipt for your tax records.          </p>
         </div>
 
         <div class="row mt-5">
-          <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="card donation-option h-100">
               <div class="card-header text-center">
-                <h3 class="mb-0">Instant QR Donation</h3>
+                <h3 class="mb-0"> QR Donation</h3>
               </div>
               <div
                 class="card-body d-flex flex-column  text-center"
               >
-                <p><strong>This option offers:</strong></p>
+   <p><strong>How it works:</strong></p>
+
                 <ul class="text-start">
-                  <li>Immediate direct bank transfer</li>
-                  <li>Quick, hassle-free process</li>
-                  <li>Convenient mobile payment</li>
-                </ul>
+  <li>Scan and donate instantly via QR code</li>
+  <li>Quick, hassle-free mobile payment</li>
+  <li>Direct transfer to our bank account</li>
+  <li>Option to claim tax exemption by filling the form beside </li>
+</ul>
+
                 <div class="mt-3 mb-4">
                   <img
-                    src="images/gpayscan.png"
+                    src="images/Green Modern Marketing Logo.png"
                     alt="Donation QR Code"
                     class="img-fluid qr-code-img"
                   />
@@ -162,17 +157,12 @@
                   instant donation. Your contribution will go directly to
                   supporting our educational and social welfare initiatives.
                 </p>
-                <p class="text-muted mt-auto">
-                  <small
-                    >For donations under ₹2,000 or when tax benefits are not
-                    required</small
-                  >
-                </p>
+                
               </div>
             </div>
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-7">
           <div class="card mb-2">
             <div class="card-header"> 
               <h3 class="text-center ">
@@ -183,12 +173,13 @@
                 <div class="mb-4">
                  
                   <p><strong>This option provides:</strong></p>
-                  <ul>
-                    <li>Official receipts for your records</li>
-                    <li>Tax exemption certificate under Section 80G</li>
-                    <li>Option for corporate or institutional contributions</li>
-                    <li>Support for CSR initiatives</li>
-                  </ul>
+                 <ul>
+  <li>Get an official receipt for your donation</li>
+  <li>Receive a tax exemption certificate under Section 80G</li>
+  <li>Valid for individual, corporate, or institutional donations</li>
+  <li>Eligible for CSR contribution reporting</li>
+</ul>
+
                   <p class="mb-0">
                     <span class="badge bg-info text-dark">Tax Benefit</span>
                     Donations qualify for tax exemption under Section 80G of
@@ -207,12 +198,12 @@
                   <img
                     src="images/donation_logo.png"
                     alt="Phiniex Trust Logo"
-                    width="70"
-                    height="70"
+                    width="60"
+                    height="50"
                   />
                 </div>
                 <div>
-                  <h1>PHINIEX EDUCATIONAL AND SOCIAL WELFARE TRUST</h1>
+                  <h2>PHINIEX EDUCATIONAL AND SOCIAL WELFARE TRUST</h2>
                   <p class="trust-info">
                     Registration No.: E - 847 of 2012 Raigad, Maharashtra
                   </p>
@@ -234,7 +225,7 @@
               </div>
 
               <div class="donation-form">
-                <form id="donationForm">
+                <form id="donationForm" action="/send-donation-receipt" method="POST">
                   <div class="form-row">
                     <div class="form-col">
                       <div class="form-group">
@@ -298,9 +289,7 @@
                           placeholder="Enter PAN number for tax benefits"
                           maxlength="10"
                         />
-                        <p class="info-text">
-                          Required for donations above ₹2000 for tax benefits
-                        </p>
+                      
                       </div>
                     </div>
                   </div>
@@ -334,25 +323,15 @@
                     </div>
                   </div>
 
-                  <div class="ambedkar-quote">
-                    "It is primary responsibility of every educated person to
-                    serve his poor and ignorant brethren. After reaching an
-                    exalted position this educated person forgets his poor,
-                    illiterate and ignorant brethren. If he does not pay
-                    attention to the thousands of his brethren it would lead to
-                    a downfall of our society."
-                    <div class="quote-author">- DR. B.R. AMBEDKAR</div>
-                  </div>
+                 
 
                   <button type="submit" id="submitBtn" class="submit-btn">
-                    Proceed to Pay
+                   Ask for Receipt
                   </button>
                 </form>
               </div>
 
-              <div class="sanskrit">
-                सबका मंगल हो । सबको सुख-शांति मिले । सबका कल्याण हो ।
-              </div>
+              
             </div>
           </div>
         </div>
@@ -366,22 +345,21 @@
       <div class="container text-center">
         <h2 class="cta-title">Join Our Community</h2>
         <p class="cta-description">
-          By reaching out, you're taking the first step toward meaningful change. Let's work together to create a better tomorrow for our community.
+          By reaching out, you're taking the first step toward meaningful
+          change. Let's work together to create a better tomorrow for our
+          community.
         </p>
-        <div class="cta-buttons">
-          <a href="donate" class="button button_action">Donate Now</a>
-          <a href="contact" class="button">Contact Us</a>
-        </div>
+        <a href="donate" class="button">Donate Now</a>
       </div>
     </section>
 
-  <div class="footer_img_holder">
-        <div class="landscape">
-        <div class="stars"></div>
+    <div class="footer_img_holder">
+      <div class="landscape">
         <div class="mountain"></div>
         <div class="mountain mountain-2"></div>
         <div class="mountain mountain-3"></div>
         <div class="sun-container sun-container-1"></div>
+
         <div class="sun-container">
           <div class="sun"></div>
         </div>
@@ -398,7 +376,13 @@
         <div class="light light-5"></div>
         <div class="light light-6"></div>
         <div class="light light-7"></div>
-        <div class="water"></div>
+        <div class="water">
+          <img
+            src="images/buddhasatuteforfooter.png"
+            alt="Buddha statue"
+            class="footer_img img-fluid"
+          />
+        </div>
         <div class="splash"></div>
         <div class="splash delay-1"></div>
         <div class="splash delay-2"></div>
@@ -412,7 +396,6 @@
         <div class="lotus lotus-2"></div>
         <div class="lotus lotus-3"></div>
         <div class="front">
-          <img src="/images/buddhasatuteforfooter.png" alt="Gold statue" class="statue">
           <div class="stone"></div>
           <div class="grass"></div>
           <div class="grass grass-1"></div>
@@ -423,7 +406,7 @@
       </div>
     </div>
 
-    <footer class="site-footer py-4">
+  <footer class="site-footer py-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0">
@@ -442,21 +425,18 @@
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
             <h4>Links</h4>
             <ul class="footer-links">
-              <li><a href="index">Home</a></li>
-              <li><a href="about">About Us</a></li>
-              <li><a href="programs">Programs</a></li>
-              <li><a href="gallery">Gallery</a></li>
-              <li><a href="contact">Contact</a></li>
+              <li><a href="/index">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/programs">Programs</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h4>Programs</h4>
             <ul class="footer-links">
-              <li><a href="#">Education Initiatives</a></li>
-              <li><a href="#">Community Support</a></li>
-              <li><a href="#">Cultural Preservation</a></li>
-              <li><a href="#">Meditation Classes</a></li>
-              <li><a href="#">Youth Development</a></li>
+              <li><a href="/programs#education">Education Initiatives</a></li>
+              <li><a href="/programs#women-empowerment">women Empowerment</a></li>
+              <li><a href="/programs#cultural">Cultural Preservation</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-12">
@@ -473,24 +453,20 @@
         </div>
         <div class="footer-bottom mt-4 pt-4 border-top">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
               <p class="mb-0">
                 &copy; 2025 Phiniex Educational and Social Welfare Trust. All
                 Rights Reserved.
               </p>
             </div>
-            <div class="col-md-6 text-md-end">
-              <ul class="footer-bottom-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Sitemap</a></li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </div>
     </footer>
-
+<div id="toast" class="toast" style="display: none;">
+  <p id="toast-message"></p>
+</div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -501,119 +477,41 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.12.0.min.js"
     ></script>
-    <!-- Razorpay JavaScript SDK -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script>
-      document
-        .getElementById("donationForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+  <script>
+  $(document).ready(function () {
+    $('#donationForm').submit(function (e) {
+      e.preventDefault();
 
-          // Get form data
-          const formData = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            phone: document.getElementById("phone").value,
-            address: document.getElementById("address").value,
-            amount: document.getElementById("amount").value,
-            panNumber: document.getElementById("panNumber").value,
-            date: document.getElementById("date").value,
-          };
+      const formData = {
+        name: $('#name').val(),
+        date: $('#date').val(),
+        address: $('#address').val(),
+        amount: $('#amount').val(),
+        panNumber: $('#panNumber').val(),
+        email: $('#email').val(),
+        phone: $('#phone').val()
+      };
 
-          // Validate amount
-          if (formData.amount <= 0) {
-            document.getElementById("errorMessage").textContent =
-              "Please enter a valid donation amount";
-            document.getElementById("errorMessage").style.display = "block";
-            return;
-          }
+      $.ajax({
+        type: 'POST',
+        url: '/send-donation-receipt',
+        data: formData,
+        success: function (response) {
+          showToast("Thank you for your donation! Check your email for the receipt.");
+          $('#donationForm')[0].reset();
+        },
+        error: function (error) {
+          showToast("Something went wrong. Please try again later.");
+        }
+      });
+    });
 
-          // Disable submit button to prevent multiple submissions
-          document.getElementById("submitBtn").disabled = true;
+    function showToast(message) {
+      $('#toast-message').text(message);
+      $('#toast').fadeIn(400).delay(3000).fadeOut(400);
+    }
+  });
+</script>
 
-          // Create order on server
-          fetch("/create-order", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              if (data.error) {
-                throw new Error(data.error);
-              }
-
-              // Open Razorpay checkout form
-              const options = {
-                key: "<%= RAZORPAY_KEY_ID %>", // Razorpay Key ID
-                amount: data.order.amount,
-                currency: "INR",
-                name: "Phiniex Educational and Social Welfare Trust",
-                description: "Donation",
-                order_id: data.order.id,
-                prefill: {
-                  name: formData.name,
-                  email: formData.email,
-                  contact: formData.phone,
-                },
-                notes: {
-                  address: formData.address,
-                  panNumber: formData.panNumber,
-                },
-                theme: {
-                  color: "#1f3858",
-                },
-                handler: function (response) {
-                  // Send payment verification to server
-                  fetch("/verify-payment", {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                      razorpay_payment_id: response.razorpay_payment_id,
-                      razorpay_order_id: response.razorpay_order_id,
-                      razorpay_signature: response.razorpay_signature,
-                      formData: formData,
-                    }),
-                  })
-                    .then((response) => response.json())
-                    .then((data) => {
-                      if (data.success) {
-                        document.getElementById(
-                          "successMessage"
-                        ).style.display = "block";
-                        document.getElementById("donationForm").reset();
-                      } else {
-                        throw new Error(
-                          data.error || "Payment verification failed"
-                        );
-                      }
-                    })
-                    .catch((error) => {
-                      document.getElementById("errorMessage").textContent =
-                        error.message;
-                      document.getElementById("errorMessage").style.display =
-                        "block";
-                    })
-                    .finally(() => {
-                      document.getElementById("submitBtn").disabled = false;
-                    });
-                },
-              };
-
-              const razorpayInstance = new Razorpay(options);
-              razorpayInstance.open();
-            })
-            .catch((error) => {
-              document.getElementById("errorMessage").textContent =
-                error.message;
-              document.getElementById("errorMessage").style.display = "block";
-              document.getElementById("submitBtn").disabled = false;
-            });
-        });
-    </script>
   </body>
 </html>
