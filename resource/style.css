@@ -1229,3 +1229,16 @@ nav {
   font-size: 16px;
 }
 
+  .story-image {
+    position: relative;
+  }
+  .floating-image {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 50%;
+  }
+  .floating-image img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    border: 5px solid var(--white);
+  }
