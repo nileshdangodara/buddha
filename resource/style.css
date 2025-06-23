@@ -285,17 +285,7 @@ nav {
   padding: 2rem;
   align-items: center;
 }
-.course-card {
-  width: 30rem;
-  height: 25rem;
-  background: white;
-  border-radius: 30px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  transition: 0.2s ease-in-out;
-  animation: updown 3s linear infinite;
-  overflow: hidden;
-  -webkit-animation: updown 3s linear infinite;
-}
+
 .img-holder{
    width: 100%;
   height: 100%;
