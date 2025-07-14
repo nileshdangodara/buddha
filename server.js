@@ -16,7 +16,9 @@ const Counter = require('./model/schema.js').Counter;
 app.use(bodyparser.urlencoded({ extended: true }));
 const path = require('path');
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, 'resource'))); 
+app.use(express.static(path.join(__dirname, 'resource'), {
+  maxAge: '30d'
+})); 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
