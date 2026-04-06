@@ -519,7 +519,7 @@ nav {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ff7e5f;
+  background-color: rgba(255,126,95,1);
   color: var(--white);
   text-decoration: none;
   transition: var(--transition);
