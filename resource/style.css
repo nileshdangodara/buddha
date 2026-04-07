@@ -519,13 +519,10 @@ nav {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(255,126,95,1);
+ background-color: var(--accent);
   color: var(--white);
   text-decoration: none;
   transition: var(--transition);
-}
-.social-icons a i {
-  font-size: 18px;
 }
 .social-icons-contact a{
   display: flex;
